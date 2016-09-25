@@ -5,8 +5,8 @@ use std::io::prelude::*;
 use std::fs::{File, OpenOptions};
 
 pub struct WorkSheet {
-    name: String,
-    data: String
+    pub name: String,
+    pub data: String
 }
 impl WorkSheet {
     pub fn new(mut a: ZipFile) -> Result<WorkSheet,ZipError> {
